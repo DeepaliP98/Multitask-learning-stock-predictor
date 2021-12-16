@@ -7,6 +7,7 @@ In this light, we build a multitask learning model that simultaneously tries to 
 
 It was observed that the multitask learning model had an improvement of around 3 - 4 % of relative accuracy when compared to the baseline models for each of the corresponding correlated stocks in similar settings.
 
+Publication: https://link.springer.com/chapter/10.1007/978-981-15-9774-9_38
 
 # Code Execution: 
 All the code used for the project is found in \Code
