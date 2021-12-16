@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block app_content %}
+    <h1>Stock Predictor : An AI based stock price analyser and predictor</h1>
+    <br><br><br>
+    <h3 style="margin-left: 120px;">{{ company }}</h3>
+
+    <div style="border: 2px solid black; padding: 10px; border-radius: 8px 8px 8px 8px; background: #E8E8E8; width: 800px; font-size: 21px; left; margin-left: 110px; ">
+    <table>
+        <tr class="row">
+            <th style=" width: 400px; text-align:center; border: 1px solid black; background: #A8A8A8;">Actual Closing Price</th>
+            <th style=" width: 400px; text-align:center; border: 1px solid black; background: #A8A8A8;">Predicted Closing Price</th>
+        </tr>
+        <tr class="row">
+            <td style=" width: 400px; text-align:center; border: 1px solid black; background: #C8C8C8;">{{ original }}</td>
+            <td style=" width: 400px; text-align:center; border: 1px solid black; background: #C8C8C8;">{{ predicted }}</td>
+        </tr>
+    </table>
+    </div>
+{% endblock %}
