@@ -79,4 +79,10 @@ To access the web application, navigate to "localhost:5000/" on the browser.
 
 Note: Mozilla Firefox is the suggested browser. Google chrome might mess up the graph plotting functionality.  
 
+General motors and Toyota output comparison:
+
+![image](https://user-images.githubusercontent.com/31768980/146443412-c4d952bc-0a2f-4b0d-a3df-db0d714a1f1c.png)
+
+![image](https://user-images.githubusercontent.com/31768980/146443707-88968df5-87f1-489a-9ad2-4e70ba4d08ff.png)
+
 
