@@ -10,9 +10,8 @@ It was observed that the multitask learning model had an improvement of around 3
 Publication: https://link.springer.com/chapter/10.1007/978-981-15-9774-9_38
 
 # Code Execution: 
-All the code used for the project is found in \Code
 ## Dataset Analysis:
-  * Code\Dataset Analysis
+  * \Dataset Analysis
     Loads stock histories of various companies and provides two most correlated stocks
 * Requirement:
     * Python3.6+
@@ -27,7 +26,7 @@ All the code used for the project is found in \Code
 
 
 ## Accuracy prediction for given Date:
-* Code\StockPredictor : Predicts the accuracy given company and date
+* \StockPredictor : Predicts the accuracy given company and date
   * Requirements:
   * Python3.6+
   * Tensorflow 1.x
@@ -39,7 +38,7 @@ All the code used for the project is found in \Code
 
 
 ## Model Training:
-Code\ ModelTrain
+\ModelTrain
 Retrain the model and testing accuracies for baseline and multitask models.
 WARNING: Do not run using normal tensorflow(CPU) as the model is a sequential model and requires GPU power. Running using CPU only can cause substantial amounts of heating.
 * Requirements :
@@ -63,7 +62,7 @@ WARNING: Do not run using normal tensorflow(CPU) as the model is a sequential mo
   * Or view using Jupyter notebook mlt.ipynb
 
 # UI:
-  ## Code\ UI
+  ## \ UI
 Accessing the project functionalities through the UI requires setting up the UI project on Pycharm as a separate project.
 To keep dependencies trackable, it is recommended to create a separate environment with following dependencies:
 1) flask

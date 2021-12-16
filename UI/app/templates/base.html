@@ -1,0 +1,36 @@
+{% extends 'bootstrap/base.html' %}
+
+{% block title %}
+    {% if title %}{{ title }} - Stock Predictor{% else %}Welcome to Stock Predictor{% endif %}
+{% endblock %}
+
+{% block navbar %}
+    <nav class="navbar navbar-default">
+        <div style="padding-left:10px; font-size: 20px;">
+            <div class="navbar-header">
+                <a class="navbar-brand" style="font-size:30px;" href="{{ url_for('index') }}" >Stock Predictor</a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href=" {{ url_for('DTW_initial')}} ">DTW Distance</a></li>
+                    <li><a href=" {{ url_for('analyse_initial')}} ">Analyse</a></li>
+                    <li><a href=" {{ url_for('predict')}} ">Predict</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            {% for message in messages %}
+            <div class="alert alert-info" role="alert">{{ message }}</div>
+            {% endfor %}
+        {% endif %}
+        {% endwith %}
+        {% block app_content %}{% endblock %}
+    </div>
+{% endblock %}

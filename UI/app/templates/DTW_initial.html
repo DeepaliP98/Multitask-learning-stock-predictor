@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block app_content %}
+    <h1>Stock Predictor : An AI based stock price analyser and predictor</h1>
+    <br><br><br>
+    <div>
+        <form action="" method="post">
+            {{ form.csrf_token }}
+            <div style="width:600px;">
+            {{ wtf.form_field(form.company1, class='form-control') }}
+            </div>
+            <br>
+            <div style="width:600px;">
+            {{ wtf.form_field(form.company2, class='form-control') }}
+            </div>
+            <br>
+            {{ wtf.form_field(form.submit) }}
+        </form>
+    </div>
+{% endblock %}
