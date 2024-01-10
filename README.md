@@ -1,7 +1,8 @@
-# Multitask-stock-predictor
+# Stock Prediction using Multitask learning
+A two-phase setup that uses fastdtw to bucket correlated stocks and a multitask learning framework that tries to simultaneously predict future values for correlated stocks.
 
 ## Project Abstract: 
-Financial forecasting plays a crucial role in investment decision making and portfolio diversification. A given stock’s future value can be predicted based on its history on the assumption that there will be repetition of trends. However, stocks are not only affected by their history but also are affected by market trends and competitors. 
+Financial forecasting plays a crucial role in investment decision-making and portfolio diversification. A given stock’s future value can be predicted based on its history on the assumption that there will be repetition of trends. However, stocks are not only affected by their history but also are affected by market trends and competitors. 
 
 In this light, we build a multitask learning model that simultaneously tries to predict the future values of stocks whilst sharing domain specific knowledge among them. However, consideration of all stocks at once is impractical and introduces noise in the network. So we build a stock selector that finds the dynamic correlation between the stocks and selects the most correlated stocks as input to our multitask learning model.
 
